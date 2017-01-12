@@ -1,18 +1,16 @@
 #pragma once
-#include "all.h"
 #include "Meniu.h"
 
 using namespace std;
 
-namespace MBBMonopoly {
-
+namespace MBBMonopoly
+{
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
@@ -74,8 +72,8 @@ namespace MBBMonopoly {
 		private: System::Void MyForm_Click(System::Object^  sender, System::EventArgs^  e)
 		{
 			Meniu ^ form = gcnew Meniu();
-			this->Hide();
 			form->Show();
+			this->Hide();
 		}
 	};
 }
