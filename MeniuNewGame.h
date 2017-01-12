@@ -35,13 +35,19 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  HowManyPlayers;
+	private: System::Windows::Forms::Button^  btnHumanPlayers0;
+	private: System::Windows::Forms::Button^  btnHumanPlayers1;
+	private: System::Windows::Forms::Button^  btnHumanPlayers2;
+	private: System::Windows::Forms::Button^  btnHumanPlayers3;
+	private: System::Windows::Forms::Button^  btnHumanPlayers4;
 	protected:
-	private: System::Windows::Forms::Button^  btn_0;
-	private: System::Windows::Forms::Button^  btn_1;
-	private: System::Windows::Forms::Button^  btn_2;
-	private: System::Windows::Forms::Button^  btn_3;
-	private: System::Windows::Forms::Button^  btn_4;
-	private: System::Windows::Forms::Button^  btn_back;
+
+
+
+
+
+	private: System::Windows::Forms::Button^  btnBackMeniuNewGame;
+
 
 	private:
 		/// <summary>
@@ -58,12 +64,12 @@ namespace MBBMonopoly {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuNewGame::typeid));
 			this->HowManyPlayers = (gcnew System::Windows::Forms::PictureBox());
-			this->btn_0 = (gcnew System::Windows::Forms::Button());
-			this->btn_1 = (gcnew System::Windows::Forms::Button());
-			this->btn_2 = (gcnew System::Windows::Forms::Button());
-			this->btn_3 = (gcnew System::Windows::Forms::Button());
-			this->btn_4 = (gcnew System::Windows::Forms::Button());
-			this->btn_back = (gcnew System::Windows::Forms::Button());
+			this->btnHumanPlayers0 = (gcnew System::Windows::Forms::Button());
+			this->btnHumanPlayers1 = (gcnew System::Windows::Forms::Button());
+			this->btnHumanPlayers2 = (gcnew System::Windows::Forms::Button());
+			this->btnHumanPlayers3 = (gcnew System::Windows::Forms::Button());
+			this->btnHumanPlayers4 = (gcnew System::Windows::Forms::Button());
+			this->btnBackMeniuNewGame = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->HowManyPlayers))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -78,80 +84,79 @@ namespace MBBMonopoly {
 			this->HowManyPlayers->TabIndex = 0;
 			this->HowManyPlayers->TabStop = false;
 			// 
-			// btn_0
+			// btnHumanPlayers0
 			// 
-			this->btn_0->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_0.BackgroundImage")));
-			this->btn_0->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_0->Location = System::Drawing::Point(57, 193);
-			this->btn_0->Name = L"btn_0";
-			this->btn_0->Size = System::Drawing::Size(100, 50);
-			this->btn_0->TabIndex = 1;
-			this->btn_0->UseVisualStyleBackColor = true;
+			this->btnHumanPlayers0->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnHumanPlayers0.BackgroundImage")));
+			this->btnHumanPlayers0->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnHumanPlayers0->Location = System::Drawing::Point(57, 193);
+			this->btnHumanPlayers0->Name = L"btnHumanPlayers0";
+			this->btnHumanPlayers0->Size = System::Drawing::Size(100, 50);
+			this->btnHumanPlayers0->TabIndex = 1;
+			this->btnHumanPlayers0->UseVisualStyleBackColor = true;
 			// 
-			// btn_1
+			// btnHumanPlayers1
 			// 
-			this->btn_1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_1.BackgroundImage")));
-			this->btn_1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_1->Location = System::Drawing::Point(208, 193);
-			this->btn_1->Name = L"btn_1";
-			this->btn_1->Size = System::Drawing::Size(100, 50);
-			this->btn_1->TabIndex = 2;
-			this->btn_1->UseVisualStyleBackColor = true;
+			this->btnHumanPlayers1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnHumanPlayers1.BackgroundImage")));
+			this->btnHumanPlayers1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnHumanPlayers1->Location = System::Drawing::Point(208, 193);
+			this->btnHumanPlayers1->Name = L"btnHumanPlayers1";
+			this->btnHumanPlayers1->Size = System::Drawing::Size(100, 50);
+			this->btnHumanPlayers1->TabIndex = 2;
+			this->btnHumanPlayers1->UseVisualStyleBackColor = true;
 			// 
-			// btn_2
+			// btnHumanPlayers2
 			// 
-			this->btn_2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_2.BackgroundImage")));
-			this->btn_2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_2->Location = System::Drawing::Point(361, 193);
-			this->btn_2->Name = L"btn_2";
-			this->btn_2->Size = System::Drawing::Size(100, 50);
-			this->btn_2->TabIndex = 3;
-			this->btn_2->UseVisualStyleBackColor = true;
+			this->btnHumanPlayers2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnHumanPlayers2.BackgroundImage")));
+			this->btnHumanPlayers2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnHumanPlayers2->Location = System::Drawing::Point(361, 193);
+			this->btnHumanPlayers2->Name = L"btnHumanPlayers2";
+			this->btnHumanPlayers2->Size = System::Drawing::Size(100, 50);
+			this->btnHumanPlayers2->TabIndex = 3;
+			this->btnHumanPlayers2->UseVisualStyleBackColor = true;
 			// 
-			// btn_3
+			// btnHumanPlayers3
 			// 
-			this->btn_3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_3.BackgroundImage")));
-			this->btn_3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_3->Location = System::Drawing::Point(129, 285);
-			this->btn_3->Name = L"btn_3";
-			this->btn_3->Size = System::Drawing::Size(100, 50);
-			this->btn_3->TabIndex = 4;
-			this->btn_3->UseVisualStyleBackColor = true;
+			this->btnHumanPlayers3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnHumanPlayers3.BackgroundImage")));
+			this->btnHumanPlayers3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnHumanPlayers3->Location = System::Drawing::Point(129, 285);
+			this->btnHumanPlayers3->Name = L"btnHumanPlayers3";
+			this->btnHumanPlayers3->Size = System::Drawing::Size(100, 50);
+			this->btnHumanPlayers3->TabIndex = 4;
+			this->btnHumanPlayers3->UseVisualStyleBackColor = true;
 			// 
-			// btn_4
+			// btnHumanPlayers4
 			// 
-			this->btn_4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_4.BackgroundImage")));
-			this->btn_4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_4->Cursor = System::Windows::Forms::Cursors::Default;
-			this->btn_4->Location = System::Drawing::Point(287, 285);
-			this->btn_4->Name = L"btn_4";
-			this->btn_4->Size = System::Drawing::Size(100, 50);
-			this->btn_4->TabIndex = 5;
-			this->btn_4->UseVisualStyleBackColor = true;
+			this->btnHumanPlayers4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnHumanPlayers4.BackgroundImage")));
+			this->btnHumanPlayers4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnHumanPlayers4->Cursor = System::Windows::Forms::Cursors::Default;
+			this->btnHumanPlayers4->Location = System::Drawing::Point(287, 285);
+			this->btnHumanPlayers4->Name = L"btnHumanPlayers4";
+			this->btnHumanPlayers4->Size = System::Drawing::Size(100, 50);
+			this->btnHumanPlayers4->TabIndex = 5;
+			this->btnHumanPlayers4->UseVisualStyleBackColor = true;
 			// 
-			// btn_back
+			// btnBackMeniuNewGame
 			// 
-			this->btn_back->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_back.BackgroundImage")));
-			this->btn_back->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_back->Location = System::Drawing::Point(846, 528);
-			this->btn_back->Name = L"btn_back";
-			this->btn_back->Size = System::Drawing::Size(150, 50);
-			this->btn_back->TabIndex = 6;
-			this->btn_back->UseVisualStyleBackColor = true;
+			this->btnBackMeniuNewGame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnBackMeniuNewGame.BackgroundImage")));
+			this->btnBackMeniuNewGame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnBackMeniuNewGame->Location = System::Drawing::Point(846, 528);
+			this->btnBackMeniuNewGame->Name = L"btnBackMeniuNewGame";
+			this->btnBackMeniuNewGame->Size = System::Drawing::Size(150, 50);
+			this->btnBackMeniuNewGame->TabIndex = 6;
+			this->btnBackMeniuNewGame->UseVisualStyleBackColor = true;
 			// 
 			// MeniuNewGame
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btn_back);
-			this->Controls->Add(this->btn_4);
-			this->Controls->Add(this->btn_3);
-			this->Controls->Add(this->btn_2);
-			this->Controls->Add(this->btn_1);
-			this->Controls->Add(this->btn_0);
+			this->Controls->Add(this->btnBackMeniuNewGame);
+			this->Controls->Add(this->btnHumanPlayers4);
+			this->Controls->Add(this->btnHumanPlayers3);
+			this->Controls->Add(this->btnHumanPlayers2);
+			this->Controls->Add(this->btnHumanPlayers1);
+			this->Controls->Add(this->btnHumanPlayers0);
 			this->Controls->Add(this->HowManyPlayers);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Name = L"MeniuNewGame";

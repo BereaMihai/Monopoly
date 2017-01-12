@@ -26,6 +26,8 @@
 #include "MeniuRegulamentClassicMode9.h"
 #include "MeniuStartGame.h"
 #include "MeniuLogin.h"
+#include "MeniuUserAlreadyExists.h"
+#include "MeniuAccountCreated.h"
 
 using namespace System;
 using namespace System::Windows::Forms;
@@ -37,6 +39,6 @@ void Main(array<String^>^ args)
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	MBBMonopoly::MeniuLogin form;
+	MBBMonopoly::MyForm form;
 	Application::Run(%form);
 }

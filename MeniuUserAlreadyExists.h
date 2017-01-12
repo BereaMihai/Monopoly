@@ -10,12 +10,12 @@ namespace MBBMonopoly {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for MeniuStartGame
+	/// Summary for MeniuUserAlreadyExists
 	/// </summary>
-	public ref class MeniuStartGame : public System::Windows::Forms::Form
+	public ref class MeniuUserAlreadyExists : public System::Windows::Forms::Form
 	{
 	public:
-		MeniuStartGame(void)
+		MeniuUserAlreadyExists(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace MBBMonopoly {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MeniuStartGame()
+		~MeniuUserAlreadyExists()
 		{
 			if (components)
 			{
@@ -35,9 +35,9 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Button^  btnStartGame;
+	private: System::Windows::Forms::Button^  btnCancelUserAlreadyExists;
+	private: System::Windows::Forms::Button^  btnLogin;
 	protected:
-
 
 	private:
 		/// <summary>
@@ -52,9 +52,10 @@ namespace MBBMonopoly {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuStartGame::typeid));
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuUserAlreadyExists::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnStartGame = (gcnew System::Windows::Forms::Button());
+			this->btnCancelUserAlreadyExists = (gcnew System::Windows::Forms::Button());
+			this->btnLogin = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -63,33 +64,42 @@ namespace MBBMonopoly {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox1->Location = System::Drawing::Point(38, 43);
+			this->pictureBox1->Location = System::Drawing::Point(115, 105);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(400, 100);
-			this->pictureBox1->TabIndex = 0;
+			this->pictureBox1->Size = System::Drawing::Size(300, 70);
+			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
-			// btnStartGame
+			// btnCancelUserAlreadyExists
 			// 
-			this->btnStartGame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnStartGame.BackgroundImage")));
-			this->btnStartGame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnStartGame->Location = System::Drawing::Point(38, 222);
-			this->btnStartGame->Name = L"btnStartGame";
-			this->btnStartGame->Size = System::Drawing::Size(400, 100);
-			this->btnStartGame->TabIndex = 1;
-			this->btnStartGame->UseVisualStyleBackColor = true;
+			this->btnCancelUserAlreadyExists->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnCancelUserAlreadyExists.BackgroundImage")));
+			this->btnCancelUserAlreadyExists->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnCancelUserAlreadyExists->Location = System::Drawing::Point(315, 238);
+			this->btnCancelUserAlreadyExists->Name = L"btnCancelUserAlreadyExists";
+			this->btnCancelUserAlreadyExists->Size = System::Drawing::Size(100, 50);
+			this->btnCancelUserAlreadyExists->TabIndex = 2;
+			this->btnCancelUserAlreadyExists->UseVisualStyleBackColor = true;
 			// 
-			// MeniuStartGame
+			// btnLogin
+			// 
+			this->btnLogin->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnLogin.BackgroundImage")));
+			this->btnLogin->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnLogin->Location = System::Drawing::Point(115, 238);
+			this->btnLogin->Name = L"btnLogin";
+			this->btnLogin->Size = System::Drawing::Size(100, 50);
+			this->btnLogin->TabIndex = 3;
+			this->btnLogin->UseVisualStyleBackColor = true;
+			// 
+			// MeniuUserAlreadyExists
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnStartGame);
+			this->Controls->Add(this->btnLogin);
+			this->Controls->Add(this->btnCancelUserAlreadyExists);
 			this->Controls->Add(this->pictureBox1);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->Name = L"MeniuStartGame";
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Name = L"MeniuUserAlreadyExists";
 			this->Text = L"MBB Monopoly";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);

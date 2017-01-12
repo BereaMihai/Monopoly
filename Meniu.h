@@ -34,10 +34,14 @@ namespace MBBMonopoly {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^  btn_newgame;
+	private: System::Windows::Forms::Button^  btnNewGame;
+	private: System::Windows::Forms::Button^  btnCreateUser;
+	private: System::Windows::Forms::Button^  btnMyScore;
 	protected:
-	private: System::Windows::Forms::Button^  btn_createuser;
-	private: System::Windows::Forms::Button^  btn_myscore;
+
+	protected:
+
+
 
 	private:
 		/// <summary>
@@ -53,51 +57,50 @@ namespace MBBMonopoly {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Meniu::typeid));
-			this->btn_newgame = (gcnew System::Windows::Forms::Button());
-			this->btn_createuser = (gcnew System::Windows::Forms::Button());
-			this->btn_myscore = (gcnew System::Windows::Forms::Button());
+			this->btnNewGame = (gcnew System::Windows::Forms::Button());
+			this->btnCreateUser = (gcnew System::Windows::Forms::Button());
+			this->btnMyScore = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// btn_newgame
+			// btnNewGame
 			// 
-			this->btn_newgame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_newgame.BackgroundImage")));
-			this->btn_newgame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_newgame->Location = System::Drawing::Point(113, 93);
-			this->btn_newgame->Name = L"btn_newgame";
-			this->btn_newgame->Size = System::Drawing::Size(300, 70);
-			this->btn_newgame->TabIndex = 0;
-			this->btn_newgame->UseVisualStyleBackColor = true;
+			this->btnNewGame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnNewGame.BackgroundImage")));
+			this->btnNewGame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnNewGame->Location = System::Drawing::Point(113, 93);
+			this->btnNewGame->Name = L"btnNewGame";
+			this->btnNewGame->Size = System::Drawing::Size(300, 70);
+			this->btnNewGame->TabIndex = 0;
+			this->btnNewGame->UseVisualStyleBackColor = true;
 			// 
-			// btn_createuser
+			// btnCreateUser
 			// 
-			this->btn_createuser->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_createuser.BackgroundImage")));
-			this->btn_createuser->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_createuser->Location = System::Drawing::Point(113, 220);
-			this->btn_createuser->Name = L"btn_createuser";
-			this->btn_createuser->Size = System::Drawing::Size(300, 70);
-			this->btn_createuser->TabIndex = 1;
-			this->btn_createuser->UseVisualStyleBackColor = true;
+			this->btnCreateUser->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnCreateUser.BackgroundImage")));
+			this->btnCreateUser->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnCreateUser->Location = System::Drawing::Point(113, 220);
+			this->btnCreateUser->Name = L"btnCreateUser";
+			this->btnCreateUser->Size = System::Drawing::Size(300, 70);
+			this->btnCreateUser->TabIndex = 1;
+			this->btnCreateUser->UseVisualStyleBackColor = true;
 			// 
-			// btn_myscore
+			// btnMyScore
 			// 
-			this->btn_myscore->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_myscore.BackgroundImage")));
-			this->btn_myscore->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_myscore->Location = System::Drawing::Point(113, 350);
-			this->btn_myscore->Name = L"btn_myscore";
-			this->btn_myscore->Size = System::Drawing::Size(300, 70);
-			this->btn_myscore->TabIndex = 2;
-			this->btn_myscore->UseVisualStyleBackColor = true;
+			this->btnMyScore->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnMyScore.BackgroundImage")));
+			this->btnMyScore->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnMyScore->Location = System::Drawing::Point(113, 350);
+			this->btnMyScore->Name = L"btnMyScore";
+			this->btnMyScore->Size = System::Drawing::Size(300, 70);
+			this->btnMyScore->TabIndex = 2;
+			this->btnMyScore->UseVisualStyleBackColor = true;
 			// 
 			// Meniu
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btn_myscore);
-			this->Controls->Add(this->btn_createuser);
-			this->Controls->Add(this->btn_newgame);
+			this->Controls->Add(this->btnMyScore);
+			this->Controls->Add(this->btnCreateUser);
+			this->Controls->Add(this->btnNewGame);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Name = L"Meniu";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

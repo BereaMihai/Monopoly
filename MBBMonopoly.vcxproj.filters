@@ -102,6 +102,12 @@
     <ClCompile Include="MeniuLogin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MeniuAccountCreated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeniuUserAlreadyExists.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -191,6 +197,12 @@
     <ClInclude Include="MeniuLogin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MeniuAccountCreated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MeniuUserAlreadyExists.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Meniu.resx">
@@ -272,6 +284,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuStartGame.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAssignPlayerNames4.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuLogin.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

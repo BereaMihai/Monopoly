@@ -36,8 +36,11 @@ namespace MBBMonopoly {
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::Button^  btn_skip;
-	private: System::Windows::Forms::Button^  btn_nextpage;
+	private: System::Windows::Forms::Button^  btnSkip;
+	private: System::Windows::Forms::Button^  btnNextPageMeniuRegClassicMode;
+
+
+
 
 
 	protected:
@@ -59,8 +62,8 @@ namespace MBBMonopoly {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuRegulamentClassicMode::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->btn_skip = (gcnew System::Windows::Forms::Button());
-			this->btn_nextpage = (gcnew System::Windows::Forms::Button());
+			this->btnSkip = (gcnew System::Windows::Forms::Button());
+			this->btnNextPageMeniuRegClassicMode = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -86,35 +89,34 @@ namespace MBBMonopoly {
 			this->pictureBox2->TabIndex = 1;
 			this->pictureBox2->TabStop = false;
 			// 
-			// btn_skip
+			// btnSkip
 			// 
-			this->btn_skip->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_skip.BackgroundImage")));
-			this->btn_skip->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_skip->Location = System::Drawing::Point(652, 545);
-			this->btn_skip->Name = L"btn_skip";
-			this->btn_skip->Size = System::Drawing::Size(150, 50);
-			this->btn_skip->TabIndex = 2;
-			this->btn_skip->UseVisualStyleBackColor = true;
+			this->btnSkip->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnSkip.BackgroundImage")));
+			this->btnSkip->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnSkip->Location = System::Drawing::Point(652, 545);
+			this->btnSkip->Name = L"btnSkip";
+			this->btnSkip->Size = System::Drawing::Size(150, 50);
+			this->btnSkip->TabIndex = 2;
+			this->btnSkip->UseVisualStyleBackColor = true;
 			// 
-			// btn_nextpage
+			// btnNextPageMeniuRegClassicMode
 			// 
-			this->btn_nextpage->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_nextpage.BackgroundImage")));
-			this->btn_nextpage->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_nextpage->Location = System::Drawing::Point(832, 545);
-			this->btn_nextpage->Name = L"btn_nextpage";
-			this->btn_nextpage->Size = System::Drawing::Size(150, 50);
-			this->btn_nextpage->TabIndex = 3;
-			this->btn_nextpage->UseVisualStyleBackColor = true;
+			this->btnNextPageMeniuRegClassicMode->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnNextPageMeniuRegClassicMode.BackgroundImage")));
+			this->btnNextPageMeniuRegClassicMode->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnNextPageMeniuRegClassicMode->Location = System::Drawing::Point(832, 545);
+			this->btnNextPageMeniuRegClassicMode->Name = L"btnNextPageMeniuRegClassicMode";
+			this->btnNextPageMeniuRegClassicMode->Size = System::Drawing::Size(150, 50);
+			this->btnNextPageMeniuRegClassicMode->TabIndex = 3;
+			this->btnNextPageMeniuRegClassicMode->UseVisualStyleBackColor = true;
 			// 
 			// MeniuRegulamentClassicMode
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btn_nextpage);
-			this->Controls->Add(this->btn_skip);
+			this->Controls->Add(this->btnNextPageMeniuRegClassicMode);
+			this->Controls->Add(this->btnSkip);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->Name = L"MeniuRegulamentClassicMode";

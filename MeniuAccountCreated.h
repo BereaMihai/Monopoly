@@ -10,12 +10,12 @@ namespace MBBMonopoly {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for MeniuStartGame
+	/// Summary for MeniuAccountCreated
 	/// </summary>
-	public ref class MeniuStartGame : public System::Windows::Forms::Form
+	public ref class MeniuAccountCreated : public System::Windows::Forms::Form
 	{
 	public:
-		MeniuStartGame(void)
+		MeniuAccountCreated(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace MBBMonopoly {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MeniuStartGame()
+		~MeniuAccountCreated()
 		{
 			if (components)
 			{
@@ -35,9 +35,8 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Button^  btnStartGame;
 	protected:
-
+	private: System::Windows::Forms::Button^  btnOkUserSuccesfullyCreated;
 
 	private:
 		/// <summary>
@@ -52,9 +51,9 @@ namespace MBBMonopoly {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuStartGame::typeid));
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuAccountCreated::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnStartGame = (gcnew System::Windows::Forms::Button());
+			this->btnOkUserSuccesfullyCreated = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -63,33 +62,32 @@ namespace MBBMonopoly {
 			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox1->Location = System::Drawing::Point(38, 43);
+			this->pictureBox1->Location = System::Drawing::Point(94, 103);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(400, 100);
+			this->pictureBox1->Size = System::Drawing::Size(350, 70);
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			// 
-			// btnStartGame
+			// btnOkUserSuccesfullyCreated
 			// 
-			this->btnStartGame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnStartGame.BackgroundImage")));
-			this->btnStartGame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnStartGame->Location = System::Drawing::Point(38, 222);
-			this->btnStartGame->Name = L"btnStartGame";
-			this->btnStartGame->Size = System::Drawing::Size(400, 100);
-			this->btnStartGame->TabIndex = 1;
-			this->btnStartGame->UseVisualStyleBackColor = true;
+			this->btnOkUserSuccesfullyCreated->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnOkUserSuccesfullyCreated.BackgroundImage")));
+			this->btnOkUserSuccesfullyCreated->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnOkUserSuccesfullyCreated->Location = System::Drawing::Point(222, 226);
+			this->btnOkUserSuccesfullyCreated->Name = L"btnOkUserSuccesfullyCreated";
+			this->btnOkUserSuccesfullyCreated->Size = System::Drawing::Size(100, 50);
+			this->btnOkUserSuccesfullyCreated->TabIndex = 1;
+			this->btnOkUserSuccesfullyCreated->UseVisualStyleBackColor = true;
 			// 
-			// MeniuStartGame
+			// MeniuAccountCreated
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnStartGame);
+			this->Controls->Add(this->btnOkUserSuccesfullyCreated);
 			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->Name = L"MeniuStartGame";
-			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
+			this->Name = L"MeniuAccountCreated";
 			this->Text = L"MBB Monopoly";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);

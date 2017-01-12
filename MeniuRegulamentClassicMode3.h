@@ -35,9 +35,12 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::Button^  btn_previouspage2;
+	private: System::Windows::Forms::Button^  btnPreviousPageMeniuRegClassicMode3;
+	private: System::Windows::Forms::Button^  btnNextPageMeniuRegClassicMode3;
 
-	private: System::Windows::Forms::Button^  btn_nextpage3;
+
+
+
 
 	protected:
 
@@ -56,8 +59,8 @@ namespace MBBMonopoly {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuRegulamentClassicMode3::typeid));
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->btn_previouspage2 = (gcnew System::Windows::Forms::Button());
-			this->btn_nextpage3 = (gcnew System::Windows::Forms::Button());
+			this->btnPreviousPageMeniuRegClassicMode3 = (gcnew System::Windows::Forms::Button());
+			this->btnNextPageMeniuRegClassicMode3 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -72,35 +75,34 @@ namespace MBBMonopoly {
 			this->pictureBox2->TabIndex = 3;
 			this->pictureBox2->TabStop = false;
 			// 
-			// btn_previouspage2
+			// btnPreviousPageMeniuRegClassicMode3
 			// 
-			this->btn_previouspage2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_previouspage2.BackgroundImage")));
-			this->btn_previouspage2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_previouspage2->Location = System::Drawing::Point(652, 545);
-			this->btn_previouspage2->Name = L"btn_previouspage2";
-			this->btn_previouspage2->Size = System::Drawing::Size(150, 50);
-			this->btn_previouspage2->TabIndex = 4;
-			this->btn_previouspage2->UseVisualStyleBackColor = true;
+			this->btnPreviousPageMeniuRegClassicMode3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnPreviousPageMeniuRegClassicMode3.BackgroundImage")));
+			this->btnPreviousPageMeniuRegClassicMode3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnPreviousPageMeniuRegClassicMode3->Location = System::Drawing::Point(652, 545);
+			this->btnPreviousPageMeniuRegClassicMode3->Name = L"btnPreviousPageMeniuRegClassicMode3";
+			this->btnPreviousPageMeniuRegClassicMode3->Size = System::Drawing::Size(150, 50);
+			this->btnPreviousPageMeniuRegClassicMode3->TabIndex = 4;
+			this->btnPreviousPageMeniuRegClassicMode3->UseVisualStyleBackColor = true;
 			// 
-			// btn_nextpage3
+			// btnNextPageMeniuRegClassicMode3
 			// 
-			this->btn_nextpage3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_nextpage3.BackgroundImage")));
-			this->btn_nextpage3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_nextpage3->Location = System::Drawing::Point(833, 545);
-			this->btn_nextpage3->Name = L"btn_nextpage3";
-			this->btn_nextpage3->Size = System::Drawing::Size(150, 50);
-			this->btn_nextpage3->TabIndex = 5;
-			this->btn_nextpage3->UseVisualStyleBackColor = true;
+			this->btnNextPageMeniuRegClassicMode3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnNextPageMeniuRegClassicMode3.BackgroundImage")));
+			this->btnNextPageMeniuRegClassicMode3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnNextPageMeniuRegClassicMode3->Location = System::Drawing::Point(833, 545);
+			this->btnNextPageMeniuRegClassicMode3->Name = L"btnNextPageMeniuRegClassicMode3";
+			this->btnNextPageMeniuRegClassicMode3->Size = System::Drawing::Size(150, 50);
+			this->btnNextPageMeniuRegClassicMode3->TabIndex = 5;
+			this->btnNextPageMeniuRegClassicMode3->UseVisualStyleBackColor = true;
 			// 
 			// MeniuRegulamentClassicMode3
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btn_nextpage3);
-			this->Controls->Add(this->btn_previouspage2);
+			this->Controls->Add(this->btnNextPageMeniuRegClassicMode3);
+			this->Controls->Add(this->btnPreviousPageMeniuRegClassicMode3);
 			this->Controls->Add(this->pictureBox2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Name = L"MeniuRegulamentClassicMode3";

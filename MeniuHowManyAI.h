@@ -35,17 +35,21 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  HowManyAI;
-	private: System::Windows::Forms::Button^  btn_02;
-	private: System::Windows::Forms::Button^  btn_12;
-	private: System::Windows::Forms::Button^  btn_22;
-	private: System::Windows::Forms::Button^  btn_32;
-	private: System::Windows::Forms::Button^  btn_42;
+	private: System::Windows::Forms::Button^  btnPlayer0AI2;
+	private: System::Windows::Forms::Button^  btnPlayer0AI3;
+	private: System::Windows::Forms::Button^  btnPlayer0AI4;
+	private: System::Windows::Forms::Button^  btnBackHowManyAI;
 
 
 
 
 
-	private: System::Windows::Forms::Button^  btn_back;
+
+
+
+
+
+
 	protected:
 
 	private:
@@ -63,12 +67,10 @@ namespace MBBMonopoly {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuHowManyAI::typeid));
 			this->HowManyAI = (gcnew System::Windows::Forms::PictureBox());
-			this->btn_02 = (gcnew System::Windows::Forms::Button());
-			this->btn_12 = (gcnew System::Windows::Forms::Button());
-			this->btn_22 = (gcnew System::Windows::Forms::Button());
-			this->btn_32 = (gcnew System::Windows::Forms::Button());
-			this->btn_42 = (gcnew System::Windows::Forms::Button());
-			this->btn_back = (gcnew System::Windows::Forms::Button());
+			this->btnPlayer0AI2 = (gcnew System::Windows::Forms::Button());
+			this->btnPlayer0AI3 = (gcnew System::Windows::Forms::Button());
+			this->btnPlayer0AI4 = (gcnew System::Windows::Forms::Button());
+			this->btnBackHowManyAI = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->HowManyAI))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -83,80 +85,57 @@ namespace MBBMonopoly {
 			this->HowManyAI->TabIndex = 0;
 			this->HowManyAI->TabStop = false;
 			// 
-			// btn_02
+			// btnPlayer0AI2
 			// 
-			this->btn_02->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_02.BackgroundImage")));
-			this->btn_02->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_02->Location = System::Drawing::Point(57, 193);
-			this->btn_02->Name = L"btn_02";
-			this->btn_02->Size = System::Drawing::Size(100, 50);
-			this->btn_02->TabIndex = 2;
-			this->btn_02->UseVisualStyleBackColor = true;
+			this->btnPlayer0AI2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnPlayer0AI2.BackgroundImage")));
+			this->btnPlayer0AI2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnPlayer0AI2->Location = System::Drawing::Point(63, 207);
+			this->btnPlayer0AI2->Name = L"btnPlayer0AI2";
+			this->btnPlayer0AI2->Size = System::Drawing::Size(100, 50);
+			this->btnPlayer0AI2->TabIndex = 4;
+			this->btnPlayer0AI2->UseVisualStyleBackColor = true;
 			// 
-			// btn_12
+			// btnPlayer0AI3
 			// 
-			this->btn_12->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_12.BackgroundImage")));
-			this->btn_12->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_12->Location = System::Drawing::Point(208, 193);
-			this->btn_12->Name = L"btn_12";
-			this->btn_12->Size = System::Drawing::Size(100, 50);
-			this->btn_12->TabIndex = 3;
-			this->btn_12->UseVisualStyleBackColor = true;
+			this->btnPlayer0AI3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnPlayer0AI3.BackgroundImage")));
+			this->btnPlayer0AI3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnPlayer0AI3->Location = System::Drawing::Point(210, 207);
+			this->btnPlayer0AI3->Name = L"btnPlayer0AI3";
+			this->btnPlayer0AI3->Size = System::Drawing::Size(100, 50);
+			this->btnPlayer0AI3->TabIndex = 5;
+			this->btnPlayer0AI3->UseVisualStyleBackColor = true;
 			// 
-			// btn_22
+			// btnPlayer0AI4
 			// 
-			this->btn_22->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_22.BackgroundImage")));
-			this->btn_22->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_22->Location = System::Drawing::Point(361, 193);
-			this->btn_22->Name = L"btn_22";
-			this->btn_22->Size = System::Drawing::Size(100, 50);
-			this->btn_22->TabIndex = 4;
-			this->btn_22->UseVisualStyleBackColor = true;
+			this->btnPlayer0AI4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnPlayer0AI4.BackgroundImage")));
+			this->btnPlayer0AI4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnPlayer0AI4->Cursor = System::Windows::Forms::Cursors::Default;
+			this->btnPlayer0AI4->Location = System::Drawing::Point(349, 207);
+			this->btnPlayer0AI4->Name = L"btnPlayer0AI4";
+			this->btnPlayer0AI4->Size = System::Drawing::Size(100, 50);
+			this->btnPlayer0AI4->TabIndex = 6;
+			this->btnPlayer0AI4->UseVisualStyleBackColor = true;
 			// 
-			// btn_32
+			// btnBackHowManyAI
 			// 
-			this->btn_32->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_32.BackgroundImage")));
-			this->btn_32->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_32->Location = System::Drawing::Point(129, 285);
-			this->btn_32->Name = L"btn_32";
-			this->btn_32->Size = System::Drawing::Size(100, 50);
-			this->btn_32->TabIndex = 5;
-			this->btn_32->UseVisualStyleBackColor = true;
-			// 
-			// btn_42
-			// 
-			this->btn_42->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_42.BackgroundImage")));
-			this->btn_42->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_42->Cursor = System::Windows::Forms::Cursors::Default;
-			this->btn_42->Location = System::Drawing::Point(287, 285);
-			this->btn_42->Name = L"btn_42";
-			this->btn_42->Size = System::Drawing::Size(100, 50);
-			this->btn_42->TabIndex = 6;
-			this->btn_42->UseVisualStyleBackColor = true;
-			// 
-			// btn_back
-			// 
-			this->btn_back->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_back.BackgroundImage")));
-			this->btn_back->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btn_back->Location = System::Drawing::Point(846, 528);
-			this->btn_back->Name = L"btn_back";
-			this->btn_back->Size = System::Drawing::Size(150, 50);
-			this->btn_back->TabIndex = 7;
-			this->btn_back->UseVisualStyleBackColor = true;
+			this->btnBackHowManyAI->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnBackHowManyAI.BackgroundImage")));
+			this->btnBackHowManyAI->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btnBackHowManyAI->Location = System::Drawing::Point(846, 528);
+			this->btnBackHowManyAI->Name = L"btnBackHowManyAI";
+			this->btnBackHowManyAI->Size = System::Drawing::Size(150, 50);
+			this->btnBackHowManyAI->TabIndex = 7;
+			this->btnBackHowManyAI->UseVisualStyleBackColor = true;
 			// 
 			// MeniuHowManyAI
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btn_back);
-			this->Controls->Add(this->btn_42);
-			this->Controls->Add(this->btn_32);
-			this->Controls->Add(this->btn_22);
-			this->Controls->Add(this->btn_12);
-			this->Controls->Add(this->btn_02);
+			this->Controls->Add(this->btnBackHowManyAI);
+			this->Controls->Add(this->btnPlayer0AI4);
+			this->Controls->Add(this->btnPlayer0AI3);
+			this->Controls->Add(this->btnPlayer0AI2);
 			this->Controls->Add(this->HowManyAI);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Name = L"MeniuHowManyAI";
