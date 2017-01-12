@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9696B190-8A31-45BA-A43E-0287102EF438}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>MBBMonopoly</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Meniu.cpp" />
+    <ClCompile Include="MeniuAccountCreated.cpp" />
+    <ClCompile Include="MeniuAssignPlayerNames.cpp" />
+    <ClCompile Include="MeniuAssignPlayerNames2.cpp" />
+    <ClCompile Include="MeniuAssignPlayerNames3.cpp" />
+    <ClCompile Include="MeniuAssignPlayerNames4.cpp" />
+    <ClCompile Include="MeniuCreateUser.cpp" />
+    <ClCompile Include="MeniuFun.cpp" />
+    <ClCompile Include="MeniuFun2.cpp" />
+    <ClCompile Include="MeniuFun3.cpp" />
+    <ClCompile Include="MeniuFun4.cpp" />
+    <ClCompile Include="MeniuHowManyAI.cpp" />
+    <ClCompile Include="MeniuHowManyAI2.cpp" />
+    <ClCompile Include="MeniuHowManyAI3.cpp" />
+    <ClCompile Include="MeniuHowManyAI4.cpp" />
+    <ClCompile Include="MeniuLogin.cpp" />
+    <ClCompile Include="MeniuMode.cpp" />
+    <ClCompile Include="MeniuMyScore.cpp" />
+    <ClCompile Include="MeniuNewGame.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode2.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode3.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode4.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode5.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode6.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode7.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode8.cpp" />
+    <ClCompile Include="MeniuRegulamentClassicMode9.cpp" />
+    <ClCompile Include="MeniuStartGame.cpp" />
+    <ClCompile Include="MeniuUserAlreadyExists.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h" />
+    <ClInclude Include="Meniu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuAccountCreated.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuAssignPlayerNames.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuAssignPlayerNames2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuAssignPlayerNames3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuAssignPlayerNames4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuCreateUser.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuFun.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuFun2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuFun3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuFun4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuHowManyAI.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuHowManyAI2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuHowManyAI3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuHowManyAI4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuMode.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuMyScore.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuNewGame.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode6.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode7.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode8.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuRegulamentClassicMode9.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuStartGame.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MeniuUserAlreadyExists.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAccountCreated.resx">
+      <DependentUpon>MeniuAccountCreated.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAssignPlayerNames.resx">
+      <DependentUpon>MeniuAssignPlayerNames.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAssignPlayerNames2.resx">
+      <DependentUpon>MeniuAssignPlayerNames2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAssignPlayerNames3.resx">
+      <DependentUpon>MeniuAssignPlayerNames3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAssignPlayerNames4.resx">
+      <DependentUpon>MeniuAssignPlayerNames4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuCreateUser.resx">
+      <DependentUpon>MeniuCreateUser.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuFun.resx">
+      <DependentUpon>MeniuFun.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuFun2.resx">
+      <DependentUpon>MeniuFun2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuFun3.resx">
+      <DependentUpon>MeniuFun3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuFun4.resx">
+      <DependentUpon>MeniuFun4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuHowManyAI.resx">
+      <DependentUpon>MeniuHowManyAI.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuHowManyAI2.resx">
+      <DependentUpon>MeniuHowManyAI2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuHowManyAI3.resx">
+      <DependentUpon>MeniuHowManyAI3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuHowManyAI4.resx">
+      <DependentUpon>MeniuHowManyAI4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuLogin.resx">
+      <DependentUpon>MeniuLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuMode.resx">
+      <DependentUpon>MeniuMode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuMyScore.resx">
+      <DependentUpon>MeniuMyScore.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuNewGame.resx">
+      <DependentUpon>MeniuNewGame.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode.resx">
+      <DependentUpon>MeniuRegulamentClassicMode.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode2.resx">
+      <DependentUpon>MeniuRegulamentClassicMode2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode3.resx">
+      <DependentUpon>MeniuRegulamentClassicMode3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode4.resx">
+      <DependentUpon>MeniuRegulamentClassicMode4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode5.resx">
+      <DependentUpon>MeniuRegulamentClassicMode5.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode6.resx">
+      <DependentUpon>MeniuRegulamentClassicMode6.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode7.resx">
+      <DependentUpon>MeniuRegulamentClassicMode7.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode8.resx">
+      <DependentUpon>MeniuRegulamentClassicMode8.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuRegulamentClassicMode9.resx">
+      <DependentUpon>MeniuRegulamentClassicMode9.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuStartGame.resx">
+      <DependentUpon>MeniuStartGame.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuUserAlreadyExists.resx">
+      <DependentUpon>MeniuUserAlreadyExists.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
