@@ -203,6 +203,9 @@
     <ClInclude Include="MeniuUserAlreadyExists.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Meniu.resx">
@@ -290,6 +293,12 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuLogin.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuAccountCreated.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuUserAlreadyExists.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

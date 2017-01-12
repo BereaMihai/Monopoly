@@ -1,2 +1,1 @@
-#include "MeniuAssignPlayerNames.h"
-
+#include "all.h"

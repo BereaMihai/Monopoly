@@ -87,6 +87,7 @@ namespace MBBMonopoly {
 			this->Controls->Add(this->btnOkUserSuccesfullyCreated);
 			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->MaximumSize = System::Drawing::Size(1024, 640);
 			this->Name = L"MeniuAccountCreated";
 			this->Text = L"MBB Monopoly";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();

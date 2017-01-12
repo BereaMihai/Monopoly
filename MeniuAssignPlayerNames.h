@@ -139,6 +139,7 @@ namespace MBBMonopoly {
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->AssignPlayerNames);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->MaximumSize = System::Drawing::Size(1024, 640);
 			this->Name = L"MeniuAssignPlayerNames";
 			this->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

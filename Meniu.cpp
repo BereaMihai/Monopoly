@@ -1,2 +1,1 @@
-#include "Meniu.h"
-
+#include "all.h"

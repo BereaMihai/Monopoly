@@ -169,6 +169,7 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="all.h" />
     <ClInclude Include="Meniu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
