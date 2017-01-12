@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1483999196 source:c:\users\mihai\desktop\test_monopoly\main.cpp
+	<iostream>
+	<fstream>
+
