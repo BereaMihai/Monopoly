@@ -1,27 +1,28 @@
 #pragma once
 #include "MeniuNewGame.h"
-#include "MeniuMyScore.h"
 #include "MeniuCreateUser.h"
+#include "MeniuMyScore.h"
 
 using namespace std;
+using namespace System;
+using namespace System::ComponentModel;
+using namespace System::Collections;
+using namespace System::Windows::Forms;
+using namespace System::Data;
+using namespace System::Drawing;
 
-namespace MBBMonopoly {
-
-	using namespace System;
-	using namespace System::ComponentModel;
-	using namespace System::Collections;
-	using namespace System::Windows::Forms;
-	using namespace System::Data;
-	using namespace System::Drawing;
-
+namespace MBBMonopoly
+{
 	/// <summary>
 	/// Summary for Meniu
 	/// </summary>
 	public ref class Meniu : public System::Windows::Forms::Form
 	{
+		private: System::Windows::Forms::Form ^ MyForm;
 		public:
-			Meniu(void)
+			Meniu(System::Windows::Forms::Form ^ o)
 			{
+				MyForm = o;
 				InitializeComponent();
 				//
 				//TODO: Add the constructor code here
@@ -43,10 +44,6 @@ namespace MBBMonopoly {
 		private: System::Windows::Forms::Button^  btnCreateUser;
 		private: System::Windows::Forms::Button^  btnMyScore;
 		protected:
-
-		protected:
-
-
 
 		private:
 			/// <summary>
@@ -122,20 +119,19 @@ namespace MBBMonopoly {
 		private: System::Void btnNewGame_Click(System::Object^  sender, System::EventArgs^  e) 
 		{
 			MeniuNewGame^ form = gcnew MeniuNewGame();
-			this->Close();
+			this->Hide();
 			form->Show();
 		}
-
 		private: System::Void btnCreateUser_Click(System::Object^  sender, System::EventArgs^  e)
 		{
 			MeniuCreateUser^ form = gcnew MeniuCreateUser();
-			this->Close();
+			this->Hide();
 			form->Show();
 		}
 		private: System::Void btnMyScore_Click(System::Object^  sender, System::EventArgs^  e)
 		{
 			MeniuMyScore^ form = gcnew MeniuMyScore();
-			this->Close();
+			this->Hide();
 			form->Show();
 		}
 	};

@@ -29,7 +29,3 @@
 #include "MeniuLogin.h"
 #include "MeniuUserAlreadyExists.h"
 #include "MeniuAccountCreated.h"
-
-using namespace std;
-using namespace System;
-using namespace System::Windows::Forms;
