@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1484143827 source:c:\users\mihai\desktop\meintest\main.cpp
+	<iostream>
+	<Property.h>
+	<Card.h>
+	<Player.h>
+	<cstring>
+
