@@ -136,8 +136,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Player.cpp" />
+    <ClCompile Include="Joc.cpp" />
     <ClCompile Include="Meniu.cpp" />
-    <ClCompile Include="MeniuAccountCreated.cpp" />
     <ClCompile Include="MeniuAssignPlayerNames.cpp" />
     <ClCompile Include="MeniuAssignPlayerNames2.cpp" />
     <ClCompile Include="MeniuAssignPlayerNames3.cpp" />
@@ -165,15 +166,15 @@
     <ClCompile Include="MeniuRegulamentClassicMode8.cpp" />
     <ClCompile Include="MeniuRegulamentClassicMode9.cpp" />
     <ClCompile Include="MeniuStartGame.cpp" />
-    <ClCompile Include="MeniuUserAlreadyExists.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Property.cpp" />
+    <ClCompile Include="TestMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="all.h" />
-    <ClInclude Include="Meniu.h">
+    <ClInclude Include="Joc.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MeniuAccountCreated.h">
+    <ClInclude Include="Meniu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MeniuAssignPlayerNames.h">
@@ -257,19 +258,18 @@
     <ClInclude Include="MeniuStartGame.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MeniuUserAlreadyExists.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Property.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Joc.resx">
+      <DependentUpon>Joc.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Meniu.resx">
       <DependentUpon>Meniu.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MeniuAccountCreated.resx">
-      <DependentUpon>MeniuAccountCreated.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuAssignPlayerNames.resx">
       <DependentUpon>MeniuAssignPlayerNames.h</DependentUpon>
@@ -351,9 +351,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuStartGame.resx">
       <DependentUpon>MeniuStartGame.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MeniuUserAlreadyExists.resx">
-      <DependentUpon>MeniuUserAlreadyExists.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>

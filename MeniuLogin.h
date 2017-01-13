@@ -37,10 +37,8 @@ namespace MBBMonopoly {
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	protected:
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::Button^  btnOkMeniuLogin;
-	private: System::Windows::Forms::Button^  btnCancelMeniuLogin;
-
-
+	private: System::Windows::Forms::Button^  btn_ok4;
+	private: System::Windows::Forms::Button^  btn_cancel4;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::TextBox^  textBox2;
 
@@ -60,8 +58,8 @@ namespace MBBMonopoly {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuLogin::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnOkMeniuLogin = (gcnew System::Windows::Forms::Button());
-			this->btnCancelMeniuLogin = (gcnew System::Windows::Forms::Button());
+			this->btn_ok4 = (gcnew System::Windows::Forms::Button());
+			this->btn_cancel4 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -90,25 +88,25 @@ namespace MBBMonopoly {
 			this->pictureBox2->TabIndex = 1;
 			this->pictureBox2->TabStop = false;
 			// 
-			// btnOkMeniuLogin
+			// btn_ok4
 			// 
-			this->btnOkMeniuLogin->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnOkMeniuLogin.BackgroundImage")));
-			this->btnOkMeniuLogin->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnOkMeniuLogin->Location = System::Drawing::Point(205, 373);
-			this->btnOkMeniuLogin->Name = L"btnOkMeniuLogin";
-			this->btnOkMeniuLogin->Size = System::Drawing::Size(100, 50);
-			this->btnOkMeniuLogin->TabIndex = 14;
-			this->btnOkMeniuLogin->UseVisualStyleBackColor = true;
+			this->btn_ok4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_ok4.BackgroundImage")));
+			this->btn_ok4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_ok4->Location = System::Drawing::Point(205, 373);
+			this->btn_ok4->Name = L"btn_ok4";
+			this->btn_ok4->Size = System::Drawing::Size(100, 50);
+			this->btn_ok4->TabIndex = 14;
+			this->btn_ok4->UseVisualStyleBackColor = true;
 			// 
-			// btnCancelMeniuLogin
+			// btn_cancel4
 			// 
-			this->btnCancelMeniuLogin->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnCancelMeniuLogin.BackgroundImage")));
-			this->btnCancelMeniuLogin->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnCancelMeniuLogin->Location = System::Drawing::Point(354, 373);
-			this->btnCancelMeniuLogin->Name = L"btnCancelMeniuLogin";
-			this->btnCancelMeniuLogin->Size = System::Drawing::Size(100, 50);
-			this->btnCancelMeniuLogin->TabIndex = 15;
-			this->btnCancelMeniuLogin->UseVisualStyleBackColor = true;
+			this->btn_cancel4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_cancel4.BackgroundImage")));
+			this->btn_cancel4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_cancel4->Location = System::Drawing::Point(354, 373);
+			this->btn_cancel4->Name = L"btn_cancel4";
+			this->btn_cancel4->Size = System::Drawing::Size(100, 50);
+			this->btn_cancel4->TabIndex = 15;
+			this->btn_cancel4->UseVisualStyleBackColor = true;
 			// 
 			// textBox1
 			// 
@@ -132,14 +130,15 @@ namespace MBBMonopoly {
 			// 
 			// MeniuLogin
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->btnCancelMeniuLogin);
-			this->Controls->Add(this->btnOkMeniuLogin);
+			this->Controls->Add(this->btn_cancel4);
+			this->Controls->Add(this->btn_ok4);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;

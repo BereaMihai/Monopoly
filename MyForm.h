@@ -1,3 +1,4 @@
+#include "Meniu.h"
 #pragma once
 
 namespace MBBMonopoly {
@@ -53,17 +54,30 @@ namespace MBBMonopoly {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1008, 601);
+			this->ClientSize = System::Drawing::Size(1344, 740);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MBB Monopoly";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
+			this->Click += gcnew System::EventHandler(this, &MyForm::MyForm_Click);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
+		
+
+	}
+	private: System::Void MyForm_Click(System::Object^  sender, System::EventArgs^  e) {
+		Meniu^ form_meniu = gcnew Meniu();
+		form_meniu->Show();
+		this->Hide();
+	}
 	};
 }

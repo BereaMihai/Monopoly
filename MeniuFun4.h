@@ -36,12 +36,9 @@ namespace MBBMonopoly {
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::Button^  btnYesMeniuFun4;
-
-	private: System::Windows::Forms::Button^  btnNoMeniuFun4;
-	private: System::Windows::Forms::Button^  btnBackMeniuFun4;
-
-
+	private: System::Windows::Forms::Button^  btn_yes3;
+	private: System::Windows::Forms::Button^  btn_no3;
+	private: System::Windows::Forms::Button^  btn_back11;
 
 
 
@@ -63,9 +60,9 @@ namespace MBBMonopoly {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuFun4::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnYesMeniuFun4 = (gcnew System::Windows::Forms::Button());
-			this->btnNoMeniuFun4 = (gcnew System::Windows::Forms::Button());
-			this->btnBackMeniuFun4 = (gcnew System::Windows::Forms::Button());
+			this->btn_yes3 = (gcnew System::Windows::Forms::Button());
+			this->btn_no3 = (gcnew System::Windows::Forms::Button());
+			this->btn_back11 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
@@ -86,51 +83,52 @@ namespace MBBMonopoly {
 			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
 			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
 			this->pictureBox2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox2->Location = System::Drawing::Point(115, 163);
+			this->pictureBox2->Location = System::Drawing::Point(13, 199);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(300, 70);
 			this->pictureBox2->TabIndex = 4;
 			this->pictureBox2->TabStop = false;
 			// 
-			// btnYesMeniuFun4
+			// btn_yes3
 			// 
-			this->btnYesMeniuFun4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnYesMeniuFun4.BackgroundImage")));
-			this->btnYesMeniuFun4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnYesMeniuFun4->Location = System::Drawing::Point(115, 289);
-			this->btnYesMeniuFun4->Name = L"btnYesMeniuFun4";
-			this->btnYesMeniuFun4->Size = System::Drawing::Size(100, 50);
-			this->btnYesMeniuFun4->TabIndex = 5;
-			this->btnYesMeniuFun4->UseVisualStyleBackColor = true;
+			this->btn_yes3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_yes3.BackgroundImage")));
+			this->btn_yes3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_yes3->Location = System::Drawing::Point(365, 210);
+			this->btn_yes3->Name = L"btn_yes3";
+			this->btn_yes3->Size = System::Drawing::Size(100, 50);
+			this->btn_yes3->TabIndex = 5;
+			this->btn_yes3->UseVisualStyleBackColor = true;
 			// 
-			// btnNoMeniuFun4
+			// btn_no3
 			// 
-			this->btnNoMeniuFun4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnNoMeniuFun4.BackgroundImage")));
-			this->btnNoMeniuFun4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnNoMeniuFun4->Location = System::Drawing::Point(315, 289);
-			this->btnNoMeniuFun4->Name = L"btnNoMeniuFun4";
-			this->btnNoMeniuFun4->Size = System::Drawing::Size(100, 50);
-			this->btnNoMeniuFun4->TabIndex = 6;
-			this->btnNoMeniuFun4->UseVisualStyleBackColor = true;
+			this->btn_no3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_no3.BackgroundImage")));
+			this->btn_no3->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_no3->Location = System::Drawing::Point(507, 210);
+			this->btn_no3->Name = L"btn_no3";
+			this->btn_no3->Size = System::Drawing::Size(100, 50);
+			this->btn_no3->TabIndex = 6;
+			this->btn_no3->UseVisualStyleBackColor = true;
 			// 
-			// btnBackMeniuFun4
+			// btn_back11
 			// 
-			this->btnBackMeniuFun4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnBackMeniuFun4.BackgroundImage")));
-			this->btnBackMeniuFun4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnBackMeniuFun4->Location = System::Drawing::Point(846, 528);
-			this->btnBackMeniuFun4->Name = L"btnBackMeniuFun4";
-			this->btnBackMeniuFun4->Size = System::Drawing::Size(150, 50);
-			this->btnBackMeniuFun4->TabIndex = 10;
-			this->btnBackMeniuFun4->UseVisualStyleBackColor = true;
+			this->btn_back11->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_back11.BackgroundImage")));
+			this->btn_back11->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_back11->Location = System::Drawing::Point(846, 528);
+			this->btn_back11->Name = L"btn_back11";
+			this->btn_back11->Size = System::Drawing::Size(150, 50);
+			this->btn_back11->TabIndex = 10;
+			this->btn_back11->UseVisualStyleBackColor = true;
 			// 
 			// MeniuFun4
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnBackMeniuFun4);
-			this->Controls->Add(this->btnNoMeniuFun4);
-			this->Controls->Add(this->btnYesMeniuFun4);
+			this->Controls->Add(this->btn_back11);
+			this->Controls->Add(this->btn_no3);
+			this->Controls->Add(this->btn_yes3);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;

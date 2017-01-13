@@ -42,10 +42,8 @@ namespace MBBMonopoly {
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::TextBox^  textBox2;
 	private: System::Windows::Forms::TextBox^  textBox3;
-	private: System::Windows::Forms::Button^  btnOkCreateUser;
-	private: System::Windows::Forms::Button^  btnCancelCreateUser;
-
-
+	private: System::Windows::Forms::Button^  btn_ok;
+	private: System::Windows::Forms::Button^  btn_cancel;
 
 	private:
 		/// <summary>
@@ -67,8 +65,8 @@ namespace MBBMonopoly {
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->btnOkCreateUser = (gcnew System::Windows::Forms::Button());
-			this->btnCancelCreateUser = (gcnew System::Windows::Forms::Button());
+			this->btn_ok = (gcnew System::Windows::Forms::Button());
+			this->btn_cancel = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->name))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->checkpass))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pass))->BeginInit();
@@ -137,34 +135,35 @@ namespace MBBMonopoly {
 			this->textBox3->TabIndex = 6;
 			this->textBox3->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// btnOkCreateUser
+			// btn_ok
 			// 
-			this->btnOkCreateUser->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnOkCreateUser.BackgroundImage")));
-			this->btnOkCreateUser->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnOkCreateUser->Location = System::Drawing::Point(417, 419);
-			this->btnOkCreateUser->Name = L"btnOkCreateUser";
-			this->btnOkCreateUser->Size = System::Drawing::Size(100, 50);
-			this->btnOkCreateUser->TabIndex = 7;
-			this->btnOkCreateUser->UseVisualStyleBackColor = true;
+			this->btn_ok->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_ok.BackgroundImage")));
+			this->btn_ok->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_ok->Location = System::Drawing::Point(417, 419);
+			this->btn_ok->Name = L"btn_ok";
+			this->btn_ok->Size = System::Drawing::Size(100, 50);
+			this->btn_ok->TabIndex = 7;
+			this->btn_ok->UseVisualStyleBackColor = true;
 			// 
-			// btnCancelCreateUser
+			// btn_cancel
 			// 
-			this->btnCancelCreateUser->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnCancelCreateUser.BackgroundImage")));
-			this->btnCancelCreateUser->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnCancelCreateUser->Location = System::Drawing::Point(576, 419);
-			this->btnCancelCreateUser->Name = L"btnCancelCreateUser";
-			this->btnCancelCreateUser->Size = System::Drawing::Size(100, 50);
-			this->btnCancelCreateUser->TabIndex = 8;
-			this->btnCancelCreateUser->UseVisualStyleBackColor = true;
+			this->btn_cancel->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_cancel.BackgroundImage")));
+			this->btn_cancel->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_cancel->Location = System::Drawing::Point(576, 419);
+			this->btn_cancel->Name = L"btn_cancel";
+			this->btn_cancel->Size = System::Drawing::Size(100, 50);
+			this->btn_cancel->TabIndex = 8;
+			this->btn_cancel->UseVisualStyleBackColor = true;
 			// 
 			// MeniuCreateUser
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnCancelCreateUser);
-			this->Controls->Add(this->btnOkCreateUser);
+			this->Controls->Add(this->btn_cancel);
+			this->Controls->Add(this->btn_ok);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);

@@ -26,11 +26,16 @@
 #include "MeniuRegulamentClassicMode9.h"
 #include "MeniuStartGame.h"
 #include "MeniuLogin.h"
-#include "MeniuUserAlreadyExists.h"
-#include "MeniuAccountCreated.h"
+#include "Joc.h"
+#include "Player.h"
+#include "Property.h"
+
+#include <array>
+
 
 using namespace System;
 using namespace System::Windows::Forms;
+
 
 
 [STAThread]

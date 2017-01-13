@@ -41,13 +41,11 @@ namespace MBBMonopoly {
 
 
 	private: System::Windows::Forms::TextBox^  Player1Text;
-	private: System::Windows::Forms::Button^  btnOkAssignPlayerNames;
-	private: System::Windows::Forms::Button^  btnCancelAssignPlayerNames;
 
 
 
-
-
+	private: System::Windows::Forms::Button^  btn_ok2;
+	private: System::Windows::Forms::Button^  btn_cancel2;
 
 
 
@@ -68,8 +66,8 @@ namespace MBBMonopoly {
 			this->AssignPlayerNames = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->Player1Text = (gcnew System::Windows::Forms::TextBox());
-			this->btnOkAssignPlayerNames = (gcnew System::Windows::Forms::Button());
-			this->btnCancelAssignPlayerNames = (gcnew System::Windows::Forms::Button());
+			this->btn_ok2 = (gcnew System::Windows::Forms::Button());
+			this->btn_cancel2 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AssignPlayerNames))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -107,39 +105,39 @@ namespace MBBMonopoly {
 			this->Player1Text->TabIndex = 6;
 			this->Player1Text->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
 			// 
-			// btnOkAssignPlayerNames
+			// btn_ok2
 			// 
-			this->btnOkAssignPlayerNames->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnOkAssignPlayerNames.BackgroundImage")));
-			this->btnOkAssignPlayerNames->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnOkAssignPlayerNames->Location = System::Drawing::Point(125, 388);
-			this->btnOkAssignPlayerNames->Name = L"btnOkAssignPlayerNames";
-			this->btnOkAssignPlayerNames->Size = System::Drawing::Size(100, 50);
-			this->btnOkAssignPlayerNames->TabIndex = 11;
-			this->btnOkAssignPlayerNames->UseVisualStyleBackColor = true;
+			this->btn_ok2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_ok2.BackgroundImage")));
+			this->btn_ok2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_ok2->Location = System::Drawing::Point(125, 388);
+			this->btn_ok2->Name = L"btn_ok2";
+			this->btn_ok2->Size = System::Drawing::Size(100, 50);
+			this->btn_ok2->TabIndex = 11;
+			this->btn_ok2->UseVisualStyleBackColor = true;
 			// 
-			// btnCancelAssignPlayerNames
+			// btn_cancel2
 			// 
-			this->btnCancelAssignPlayerNames->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnCancelAssignPlayerNames.BackgroundImage")));
-			this->btnCancelAssignPlayerNames->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnCancelAssignPlayerNames->Location = System::Drawing::Point(325, 388);
-			this->btnCancelAssignPlayerNames->Name = L"btnCancelAssignPlayerNames";
-			this->btnCancelAssignPlayerNames->Size = System::Drawing::Size(100, 50);
-			this->btnCancelAssignPlayerNames->TabIndex = 12;
-			this->btnCancelAssignPlayerNames->UseVisualStyleBackColor = true;
+			this->btn_cancel2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_cancel2.BackgroundImage")));
+			this->btn_cancel2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_cancel2->Location = System::Drawing::Point(325, 388);
+			this->btn_cancel2->Name = L"btn_cancel2";
+			this->btn_cancel2->Size = System::Drawing::Size(100, 50);
+			this->btn_cancel2->TabIndex = 12;
+			this->btn_cancel2->UseVisualStyleBackColor = true;
 			// 
 			// MeniuAssignPlayerNames
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnCancelAssignPlayerNames);
-			this->Controls->Add(this->btnOkAssignPlayerNames);
+			this->Controls->Add(this->btn_cancel2);
+			this->Controls->Add(this->btn_ok2);
 			this->Controls->Add(this->Player1Text);
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->AssignPlayerNames);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->MaximumSize = System::Drawing::Size(1024, 640);
 			this->Name = L"MeniuAssignPlayerNames";
 			this->RightToLeft = System::Windows::Forms::RightToLeft::No;
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;

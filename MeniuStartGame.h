@@ -35,9 +35,8 @@ namespace MBBMonopoly {
 			}
 		}
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Button^  btnStartGame;
 	protected:
-
+	private: System::Windows::Forms::Button^  btn_startgame;
 
 	private:
 		/// <summary>
@@ -54,7 +53,7 @@ namespace MBBMonopoly {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MeniuStartGame::typeid));
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->btnStartGame = (gcnew System::Windows::Forms::Button());
+			this->btn_startgame = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -69,23 +68,24 @@ namespace MBBMonopoly {
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
 			// 
-			// btnStartGame
+			// btn_startgame
 			// 
-			this->btnStartGame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btnStartGame.BackgroundImage")));
-			this->btnStartGame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->btnStartGame->Location = System::Drawing::Point(38, 222);
-			this->btnStartGame->Name = L"btnStartGame";
-			this->btnStartGame->Size = System::Drawing::Size(400, 100);
-			this->btnStartGame->TabIndex = 1;
-			this->btnStartGame->UseVisualStyleBackColor = true;
+			this->btn_startgame->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_startgame.BackgroundImage")));
+			this->btn_startgame->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->btn_startgame->Location = System::Drawing::Point(38, 222);
+			this->btn_startgame->Name = L"btn_startgame";
+			this->btn_startgame->Size = System::Drawing::Size(400, 100);
+			this->btn_startgame->TabIndex = 1;
+			this->btn_startgame->UseVisualStyleBackColor = true;
 			// 
 			// MeniuStartGame
 			// 
-			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1008, 601);
-			this->Controls->Add(this->btnStartGame);
+			this->Controls->Add(this->btn_startgame);
 			this->Controls->Add(this->pictureBox1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
 			this->Name = L"MeniuStartGame";

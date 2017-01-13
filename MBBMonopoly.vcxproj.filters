@@ -102,10 +102,16 @@
     <ClCompile Include="MeniuLogin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MeniuAccountCreated.cpp">
+    <ClCompile Include="Property.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MeniuUserAlreadyExists.cpp">
+    <ClCompile Include="TestMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Joc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -197,13 +203,13 @@
     <ClInclude Include="MeniuLogin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MeniuAccountCreated.h">
+    <ClInclude Include="Property.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MeniuUserAlreadyExists.h">
+    <ClInclude Include="Joc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="all.h">
+    <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -295,10 +301,7 @@
     <EmbeddedResource Include="MeniuLogin.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="MeniuAccountCreated.resx">
-      <Filter>Resource Files</Filter>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MeniuUserAlreadyExists.resx">
+    <EmbeddedResource Include="Joc.resx">
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>

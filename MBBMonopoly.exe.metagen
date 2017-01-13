@@ -1,0 +1,135 @@
+  MBBMonopoly.Joc.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.Meniu.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuAssignPlayerNames.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuAssignPlayerNames2.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuAssignPlayerNames3.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuAssignPlayerNames4.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuCreateUser.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuFun.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuFun2.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuFun3.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuFun4.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuHowManyAI.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuHowManyAI2.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuHowManyAI3.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuHowManyAI4.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuLogin.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuMode.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuMyScore.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuNewGame.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode2.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode3.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode4.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode5.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode6.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode7.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode8.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuRegulamentClassicMode9.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MeniuStartGame.resources - Embedded, ContainedInManifestFile, 
+  MBBMonopoly.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly MBBMonopoly, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class MBBMonopoly.Joc: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.Meniu: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuAssignPlayerNames: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuAssignPlayerNames2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuAssignPlayerNames3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuAssignPlayerNames4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuCreateUser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuFun: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuFun2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuFun3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuFun4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuHowManyAI: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuHowManyAI2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuHowManyAI3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuHowManyAI4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuLogin: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuMode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuMyScore: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuNewGame: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode4: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode5: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode6: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode7: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode8: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuRegulamentClassicMode9: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MeniuStartGame: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class MBBMonopoly.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
